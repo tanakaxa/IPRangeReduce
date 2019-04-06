@@ -10,7 +10,7 @@ $ cat import.csv
 
 $ python3 rangereduce.py
 
-$ cat output.csv
+$ cat export.csv
 192.168.1.1
 192.168.1.2
 192.168.1.3
@@ -41,8 +41,8 @@ $ cat output.csv
     ```
     # Import CSV File Path
     import_file_path = ''
-    # Output CSV File Path
-    output_file_path = ''
+    # Export CSV File Path
+    export_file_path = ''
     ```
 
 1. `rangereduce.py`を実行
