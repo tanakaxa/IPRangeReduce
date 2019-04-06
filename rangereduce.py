@@ -28,4 +28,4 @@ with open(import_file_path, 'r', newline='', encoding="utf-8") as importcsv:
             filewriter = csv.writer(outputcsv)
 
             for item in ip_list:
-                filewriter.writerow([item])
+                filewriter.writerow([str(item)])
