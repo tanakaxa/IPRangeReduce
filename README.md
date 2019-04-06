@@ -1,5 +1,6 @@
-# IPv4Range2Reduce
-CSVで与えられたIPアドレスのRangeをすべて/32のアドレスに分解してCSVに出力するスクリプト
+# IPRangeReduce
+CSVで与えられたIPアドレスのRangeをすべて/32(または/128)のアドレスに分解してCSVに出力するスクリプト
+
 
 # Demo
 ```
