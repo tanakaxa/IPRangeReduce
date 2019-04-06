@@ -7,7 +7,7 @@ import_file_path = ''
 # Export CSV File Path
 export_file_path = ''
 
-# Outputファイルが存在する場合oldファイルにする
+# Exportファイルが存在する場合oldファイルにする
 if os.path.isfile(export_file_path):
     os.rename(export_file_path, export_file_path + '.old')
 
@@ -24,8 +24,8 @@ with open(import_file_path, 'r', newline='', encoding="utf-8") as importcsv:
         ip_list = list(iter_iprange(start_ip, end_ip))
 
         # CSV出力
-        with open(export_file_path, 'a', newline='', encoding="utf-8") as outputcsv:
-            filewriter = csv.writer(outputcsv)
+        with open(export_file_path, 'a', newline='', encoding="utf-8") as exportcsv:
+            filewriter = csv.writer(exportcsv)
 
             for item in ip_list:
                 filewriter.writerow([str(item)])
